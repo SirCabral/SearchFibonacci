@@ -4,18 +4,18 @@ public class Program {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);	
-		System.out.println("Insira um numero para verificar se pertence a sequencia Fibonacci: ");
+		System.out.println("Insira um numero para verificar se pertence a sequência de Fibonacci: ");
 		int numberToSearch = sc.nextInt();
 			if (searchFibonacci(numberToSearch)) {
-				System.out.println("O Número " + numberToSearch + " pertence ao Fibonacci");
+				System.out.println("O Número " + numberToSearch + " pertence a sequência de Fibonacci");
 			}
 			else {
-				System.out.println("O Número " + numberToSearch + " não pertence ao Fibonacci");
+				System.out.println("O Número " + numberToSearch + " não pertence a sequência de Fibonacci");
 			}		
 		sc.close();
 	    }
 	
-	//procura o numero informado no calculo de sequencia fibonacci e retorna um boolean
+	//procura o numero informado no calculo de sequência de Fibonacci e retorna um boolean
 	public static boolean searchFibonacci(Integer number) {
         int num1 = 1, num2 = 0;        
         for(int i = 0; i < 100; i++){
